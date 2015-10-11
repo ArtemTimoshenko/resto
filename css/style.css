@@ -486,6 +486,29 @@ padding-bottom: 74px;
 	left: 175px;
 }
 
+.ba-gallery__pict{
+position: relative;
+}
+
+.ba-gallery__pict_img{
+display: block;
+width: 100%;
+}
+
+.ba-gallery__link{
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+transition: background .3s ease-in, visibility .3s ease-in;
+}
+
+.ba-gallery__link:hover{
+background: rgba(246, 128, 128, .2) url("../img/Logofooter.svg") 50% no-repeat;
+}
+
 .ba-gallery__img{
 font-size: 0;
 }
@@ -530,6 +553,11 @@ font: 400 16px/2.2 "aleoBA", Arial, sans-serif;
 letter-spacing: 0.05em;
 }
 
+.ba-footer__logolink{
+display: inline-block;
+margin-bottom: 15px;
+}
+
 .ba-footer__link{
 color: #FFF;
 text-decoration: none;
@@ -570,6 +598,22 @@ padding-left: 0 !important;
 	.ba-footer--padding40{
 padding-top: 40px;
 	}
+}
+
+@media (max-width: 479px) {
+	.ba-footer--padding20,
+	.ba-footer--padding30,
+	.ba-footer--padding40{
+padding-left: 0 !important;
+	}
+.ba-footer--padding20,
+	.ba-footer--padding30,
+	.ba-footer--padding40{
+padding-top: 40px;
+	}
+.ba-footer{
+text-align: center;
+}
 }
 
 
